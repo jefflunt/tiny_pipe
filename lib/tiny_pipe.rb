@@ -3,9 +3,6 @@
 # things all in one object and then reuse that pipeline anywhere. sure you could
 # do basically the same thing by defining a method - not disagreeing there.
 #
-# this was originally built to be the basis of a pipeline for processing complex
-# and inconsistently formatted lines of text from log files.
-#
 # Usage:
 #   let's look at a text processing example where you want to process lines from
 #   a log file and convert it into a more helpful data structure. let's start
@@ -17,7 +14,6 @@
 #
 #   line = "2022-11-19T17:34:05.299295Z  25888 INFO loading configuration from ./config.yml\n"
 #   p = TinyPipe.new(
-#         line,
 #         [
 #           TinyPipe::MAP_STRIP,                    # the list of procs
 #           ->(line){ line.split(' ', 4),
