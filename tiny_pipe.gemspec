@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "tiny_pipe"
-  s.version     = "1.0.0"
+  s.version     = "1.0.1"
   s.description = "reusable pipelines of Procs, like one tiny level above Enumerable"
   s.summary     = "want reusable Proc-based pipelines, and absolutely nothing else? then this library is for you."
   s.authors     = ["Jeff Lunt"]
